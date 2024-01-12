@@ -3,7 +3,7 @@ import {
   useSuiClientQuery,
   useSignAndExecuteTransactionBlock,
   useCurrentAccount,
-  useSuiClient,
+  // useSuiClient,
 } from "@mysten/dapp-kit";
 import { Box, Container, Flex, Heading } from "@radix-ui/themes";
 import { ZkSendLinkBuilder } from "@mysten/zksend";
@@ -16,7 +16,7 @@ const ZK_SEND_HOST = "http://localhost:3000";
 function App() {
   const address = useCurrentAccount()?.address;
   const signAndExecute = useSignAndExecuteTransactionBlock();
-  const client = useSuiClient();
+  // const client = useSuiClient();
 
   const createLink = useMutation({
     mutationFn: async (amount: bigint) => {
