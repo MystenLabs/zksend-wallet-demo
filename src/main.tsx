@@ -24,7 +24,9 @@ const { networkConfig } = createNetworkConfig({
 });
 
 registerZkSendWallet("ZKSend Test Client", {
-  origin: "http://localhost:3000",
+  origin: window.location.host.includes("localhost")
+    ? "http://localhost:3000"
+    : "https://preview.zksend.com",
 });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
