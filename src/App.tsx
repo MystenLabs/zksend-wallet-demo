@@ -35,7 +35,7 @@ function App() {
         transactionBlock: txb,
       });
 
-      // window.location.href = link.getLink();
+      window.location.href = link.getLink();
     },
   });
 
