@@ -13,6 +13,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Theme } from "@radix-ui/themes";
 import App from "./App.tsx";
 import { registerZkSendWallet } from "@mysten/zksend";
+import { ZK_SEND_HOST } from "./constants.ts";
 
 const queryClient = new QueryClient();
 
@@ -24,9 +25,7 @@ const { networkConfig } = createNetworkConfig({
 });
 
 registerZkSendWallet("ZKSend Test Client", {
-  origin: window.location.host.includes("localhost")
-    ? "http://localhost:3000"
-    : "https://preview.zksend.com",
+  origin: ZK_SEND_HOST,
 });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

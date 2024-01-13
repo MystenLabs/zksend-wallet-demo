@@ -8,12 +8,7 @@ import {
 import { Box, Container, Flex, Heading } from "@radix-ui/themes";
 import { ZkSendLinkBuilder } from "@mysten/zksend";
 import { useMutation } from "@tanstack/react-query";
-
-const FUD_TYPE =
-  "0x76cb819b01abed502bee8a702b4c2d547532c12f25001c9dea795a5e631c26f1::fud::FUD";
-const ZK_SEND_HOST = window.location.host.includes("localhost")
-  ? "http://localhost:3000"
-  : "https://preview.zksend.com";
+import { FUD_TYPE, ZK_SEND_HOST } from "./constants";
 
 function App() {
   const address = useCurrentAccount()?.address;
@@ -31,13 +26,17 @@ function App() {
 
       const txb = await link.createSendTransaction();
 
-      console.log(link.getLink());
-
       await signAndExecute.mutateAsync({
         transactionBlock: txb,
       });
 
-      window.location.href = link.getLink();
+      // TODO: Once the updated builder is shipped with redirect support, we won't need this:
+      const url = new URL(link.getLink());
+      url.searchParams.set("redirect_url", window.location.href);
+      url.searchParams.set("name", "zkSend Wallet Demo");
+      console.log(url);
+
+      window.location.assign(url);
     },
   });
 
