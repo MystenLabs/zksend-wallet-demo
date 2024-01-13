@@ -6,14 +6,14 @@ settings:
 
 dependencies:
   '@mysten/dapp-kit':
-    specifier: 0.0.0-experimental-20240113002234
-    version: 0.0.0-experimental-20240113002234(@tanstack/react-query@5.17.9)(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.0.0-experimental-20240113020050
+    version: 0.0.0-experimental-20240113020050(@tanstack/react-query@5.17.9)(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
   '@mysten/sui.js':
-    specifier: 0.0.0-experimental-20240113002234
-    version: 0.0.0-experimental-20240113002234
+    specifier: 0.0.0-experimental-20240113020050
+    version: 0.0.0-experimental-20240113020050
   '@mysten/zksend':
-    specifier: 0.0.0-experimental-20240113002234
-    version: 0.0.0-experimental-20240113002234
+    specifier: 0.0.0-experimental-20240113020050
+    version: 0.0.0-experimental-20240113020050
   '@radix-ui/colors':
     specifier: ^3.0.0
     version: 3.0.0
@@ -375,14 +375,14 @@ packages:
       bs58: 5.0.0
     dev: false
 
-  /@mysten/dapp-kit@0.0.0-experimental-20240113002234(@tanstack/react-query@5.17.9)(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-57dE01d4dVkIbpbD9BG4/cSCmmSl4T2G8XSjSPejCuuni8mTOs9/0yg1mYifPMerLYZwCUBYGLB62xq+KQ3a2Q==}
+  /@mysten/dapp-kit@0.0.0-experimental-20240113020050(@tanstack/react-query@5.17.9)(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-aenLRMVkjwU0XpoXRWO+YLzx3I+ufqVnr/H6xayf94A6aLzWLwF3q6WmybUCbLQhMXKDPGHAasnVz67CsUkSaQ==}
     peerDependencies:
       '@tanstack/react-query': ^5.0.0
       react: '*'
     dependencies:
-      '@mysten/sui.js': 0.0.0-experimental-20240113002234
-      '@mysten/wallet-standard': 0.0.0-experimental-20240113002234
+      '@mysten/sui.js': 0.0.0-experimental-20240113020050
+      '@mysten/wallet-standard': 0.0.0-experimental-20240113020050
       '@radix-ui/react-dialog': 1.0.5(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-dropdown-menu': 2.0.6(@types/react-dom@18.2.18)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-slot': 1.0.2(@types/react@18.2.47)(react@18.2.0)
@@ -400,8 +400,8 @@ packages:
       - react-dom
     dev: false
 
-  /@mysten/sui.js@0.0.0-experimental-20240113002234:
-    resolution: {integrity: sha512-V0YI507Ic2c8QGxhsVY3HgUxJl5n8zqYLz8SW2sQo4OX6s98s9XKDxTxyKTdEXqhz4l2x0PzR7t61ddJnsmw3A==}
+  /@mysten/sui.js@0.0.0-experimental-20240113020050:
+    resolution: {integrity: sha512-EII4W0VfWUZt2Ggjoy4/yipkFLw5d5AAXoX5ALHFm6+cQnZVItK2B1gtMba0UMVqJOz45GEhwCROR8vQs3QpBw==}
     engines: {node: '>=16'}
     dependencies:
       '@mysten/bcs': 0.10.1
@@ -414,18 +414,18 @@ packages:
       tweetnacl: 1.0.3
     dev: false
 
-  /@mysten/wallet-standard@0.0.0-experimental-20240113002234:
-    resolution: {integrity: sha512-cWBWc5FSC3hcbh3XXBpTxMDXp5wAd5/Wej/+wHIW2amQkawuk0JCXL+7DxohfDEt2kjgF66/YxT6z+hW2mcYwg==}
+  /@mysten/wallet-standard@0.0.0-experimental-20240113020050:
+    resolution: {integrity: sha512-UvN5DaGr+nL8Zemw6hjG8cvcnknCt1sGdQIOD26l8lJyb6tArsANZeNJzBDcyxOYHmCTk5xRGBQDOxqLdNkKMA==}
     dependencies:
-      '@mysten/sui.js': 0.0.0-experimental-20240113002234
+      '@mysten/sui.js': 0.0.0-experimental-20240113020050
       '@wallet-standard/core': 1.0.3
     dev: false
 
-  /@mysten/zksend@0.0.0-experimental-20240113002234:
-    resolution: {integrity: sha512-g7tpqr5m63/bGDkPHgXKVIzzKU2Gib5Y3DYyFU6BaoQCPBST9N5YuJS0/03ilISNz7Dn6dBmYgTX2+mOwu/NBg==}
+  /@mysten/zksend@0.0.0-experimental-20240113020050:
+    resolution: {integrity: sha512-lXNG5Fg+LsAzPNjYjG4cla+JoUgBZEDKrhlLWmPBP7qPM+O7oWXPce6iJz6T1t/zcThFhk2LoXDkrXARuv4lDw==}
     dependencies:
-      '@mysten/sui.js': 0.0.0-experimental-20240113002234
-      '@mysten/wallet-standard': 0.0.0-experimental-20240113002234
+      '@mysten/sui.js': 0.0.0-experimental-20240113020050
+      '@mysten/wallet-standard': 0.0.0-experimental-20240113020050
       mitt: 3.0.1
       nanostores: 0.9.5
       valibot: 0.25.0

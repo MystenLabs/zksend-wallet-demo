@@ -20,6 +20,10 @@ function App() {
       const link = new ZkSendLinkBuilder({
         sender: address!,
         host: ZK_SEND_HOST,
+        redirect: {
+          url: window.location.href,
+          name: 'zkSend Wallet Demo',
+        }
       });
 
       link.addClaimableBalance(FUD_TYPE, amount);
@@ -30,10 +34,7 @@ function App() {
         transactionBlock: txb,
       });
 
-      // TODO: Once the updated builder is shipped with redirect support, we won't need this:
-      const url = new URL(link.getLink());
-      url.searchParams.set("redirect_url", window.location.href);
-      url.searchParams.set("name", "zkSend Wallet Demo");
+      const url = link.getLink();
       console.log(url);
 
       window.location.assign(url);
