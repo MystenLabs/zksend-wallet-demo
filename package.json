@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@mysten/dapp-kit": "0.0.0-experimental-20240113020050",
-    "@mysten/sui.js": "0.0.0-experimental-20240113020050",
-    "@mysten/zksend": "0.0.0-experimental-20240113020050",
+    "@mysten/dapp-kit": "0.0.0-experimental-20240123172020",
+    "@mysten/sui.js": "0.0.0-experimental-20240123172020",
+    "@mysten/zksend": "0.0.0-experimental-20240123172020",
     "@radix-ui/colors": "^3.0.0",
     "@radix-ui/react-icons": "^1.3.0",
     "@radix-ui/themes": "^2.0.0",
