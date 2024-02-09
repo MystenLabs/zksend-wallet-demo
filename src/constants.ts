@@ -3,4 +3,4 @@ export const FUD_TYPE =
 
 export const ZK_SEND_HOST = window.location.host.includes("localhost")
   ? "http://localhost:3000"
-  : "https://preview.zksend.com";
+  : "https://zksend.com";
